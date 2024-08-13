@@ -1,0 +1,145 @@
+@font-face {
+    font-family: Roboto;
+    src: url(https://fonts.google.com/specimen/Roboto);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+body {
+    justify-content: center;
+    background-color: #2d2a36;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+}
+
+.conteiner {
+    display: flex;
+    width: 800px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.conteiner-data {
+    width: 60%;
+    padding: 25px 35px;
+}
+
+.conteiner-image {
+    width: 40%;
+    border-radius: 20px;
+}
+
+.conteiner-image img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 53px;
+    margin: 0px auto 10px auto;
+}
+
+p {
+    font-size: 1rem;
+}
+
+ul {
+    list-style-image: url(./images/icon-list.svg);
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+#myForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-labels {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+label {
+    font-size: 12px;
+}
+
+.error-message {
+    display: none;
+    color: rgb(255, 56, 56);
+    font-size: 12px;
+}
+
+.normal {
+    padding: 10px 20px;
+    border: 1px solid #97979e;
+    border-radius: 5px;
+}
+
+.error {
+    outline: none;
+    background-color: rgb(255, 228, 232);
+    border: 1px solid rgb(255, 56, 56);
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: rgb(255, 56, 56);
+}
+
+button {
+    background-color: #3b3c45;
+    padding: 15px 20px;
+    transition: 1s;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    outline: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff6347;
+    transition: 1s;
+    box-shadow: 0px 10px 5px rgb(255, 150, 150);
+}
+
+@media (max-width: 450px) {
+    .conteiner {
+        flex-direction: column-reverse;
+        width: 95%;
+        padding: 0;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .conteiner-data h1 {
+        font-size: 37px;
+    }
+
+    .conteiner-data {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .conteiner-image {
+        width: 100%;
+    }
+
+    .conteiner-image img {
+        content: url("./images/illustration-sign-up-mobile.svg");
+    }
+
+    #myForm {
+        width: 100%;
+    }
+}
